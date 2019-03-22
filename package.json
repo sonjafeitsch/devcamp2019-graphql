@@ -1,0 +1,10 @@
+{
+  "name": "graphqlDemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Sonja Hohlfeld <development@sonja-hohlfeld.de>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  }
+}
