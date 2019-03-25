@@ -5,6 +5,7 @@
   "author": "Sonja Hohlfeld <development@sonja-hohlfeld.de>",
   "license": "MIT",
   "dependencies": {
-    "graphql-yoga": "^1.17.4"
+    "graphql-yoga": "^1.17.4",
+    "prisma-client-lib": "^1.29.1"
   }
 }
