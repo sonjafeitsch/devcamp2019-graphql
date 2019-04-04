@@ -1,6 +1,7 @@
 type Query {
     info: String!,
-    users: [User!]!
+    users: [User!]!,
+    user(id: ID!): User!
 }
 
 type Mutation {
@@ -8,7 +9,5 @@ type Mutation {
 }
 
 type User {
-    name: String!,
-    nickname: String!,
-    age: Int!
+    name: String!
 }
