@@ -1,4 +1,4 @@
-## GraphQL
+## GraphQL - Eine alternative zu REST
 
 **Was ist GraphQL?**
 
