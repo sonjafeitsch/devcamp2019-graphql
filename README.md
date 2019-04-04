@@ -34,9 +34,14 @@ In dem Verzeichnis `graphql-live-demo` befindet sich das Basic Setup für diese 
 
 Unter der Adresse `http://localhost:3000` läuft das Beispiel-Frontend. Da die Datenbank noch nicht hinzugefügt wurde, erscheint zunächst eine error-Meldung.
 
-**Die Datenbank hinzufügen**
+**Die Datenbank hinzufügen und das Schema generieren**
 
 `docker-compose up -d`
-`cd prisma`
+`cd server`
 `prisma deploy`
 `prisma generate`
+
+**Den GraphQL Server starten**
+`node src/index.js`
+
+Unter `http://localhost:4000` ist der Playground des GraphQL Servers erreichbar. Über den Playground kann man nun neue Nutzer hinzufügen. Diese werden dann im Interface angezeigt.
