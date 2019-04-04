@@ -29,10 +29,14 @@ In dem Verzeichnis `graphql-live-demo` befindet sich das Basic Setup für diese 
 `yarn install`
 
 **Das Frontend starten**
+
 `yarn start`
 
 Unter der Adresse `http://localhost:3000` läuft das Beispiel-Frontend. Da die Datenbank noch nicht hinzugefügt wurde, erscheint zunächst eine error-Meldung.
 
 **Die Datenbank hinzufügen**
+
 `docker-compose up -d`
-``
+`cd prisma`
+`prisma deploy`
+`prisma generate`
