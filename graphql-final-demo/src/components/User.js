@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import gql from 'graphql-tag';
-import { Query } from 'react-apollo';
+import {Query} from 'react-apollo';
 
 const USER_QUERY = gql`
     {
@@ -8,35 +8,26 @@ const USER_QUERY = gql`
             name
         }
     }
-`
+`;
 
 class User extends Component {
-    render(){
-        // const userNames = [
-        //     {
-        //         name: "Bob"
-        //     },
-        //     {
-        //         name: "Alice"
-        //     },
-        //   ]
-        return (
-            <Query query={USER_QUERY}>
-                {({loading, error, data}) => {
-                    if(loading) return <div>Fetching</div>
-                    if(error) return <div>error</div>
-                    return (
-                        <div>{data.users.map(name => <Element name={name.name} />)}</div>
-                    )
-                }}
-            </Query>
-            // <div>{userNames.map(name => <Element name={name.name} />)}</div>
-        )
-    }
+  render () {
+    return (
+      <Query query={USER_QUERY}>
+        {({loading, error, data}) => {
+          if (loading) return <div>Fetching</div>;
+          if (error) return <div>error</div>;
+          return (
+            <div>{data.users.map (name => <Element name={name.name} />)}</div>
+          );
+        }}
+      </Query>
+    );
+  }
 }
 
-function Element(props){
-    return <div>{props.name}</div>
+function Element (props) {
+  return <div>{props.name}</div>;
 }
 
-export default User
+export default User;

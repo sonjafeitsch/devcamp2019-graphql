@@ -21,3 +21,18 @@
 - [ ] Datenbankschicht mit [Prisma](https://www.prisma.io/) hinzufügen
 - [ ] Resolver-Funktionen für Einfüge-Operation schreiben
 - [ ] Frontend dranbasteln
+
+In dem Verzeichnis `graphql-live-demo` befindet sich das Basic Setup für diese Session. In `graphql-final-example` liegt das lauffertige Beispiel. Zum Starten des GraphQL Servers und des Frontends müssen die folgenden Befehle ausgeführt werden.
+
+`git clone https://github.com/sonjahohlfeld/devcamp2019.git`
+`cd devcamp2019/graphql-final-demo`
+`yarn install`
+
+**Das Frontend starten**
+`yarn start`
+
+Unter der Adresse `http://localhost:3000` läuft das Beispiel-Frontend. Da die Datenbank noch nicht hinzugefügt wurde, erscheint zunächst eine error-Meldung.
+
+**Die Datenbank hinzufügen**
+`docker-compose up -d`
+``
