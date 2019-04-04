@@ -24,8 +24,10 @@
 
 In dem Verzeichnis `graphql-live-demo` befindet sich das Basic Setup für diese Session. In `graphql-final-example` liegt das lauffertige Beispiel. Zum Starten des GraphQL Servers und des Frontends müssen die folgenden Befehle ausgeführt werden.
 
-`git clone https://github.com/sonjahohlfeld/devcamp2019.git`
+`git clone https://github.com/sonjahohlfeld/devcamp2019-graphql.git`
+
 `cd devcamp2019/graphql-final-demo`
+
 `yarn install`
 
 **Das Frontend starten**
